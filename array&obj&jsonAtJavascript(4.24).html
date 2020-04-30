@@ -1,0 +1,32 @@
+<head>
+	<title>JSON Basic</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<script>
+		/* Array and Object Definition  */
+		var arr = [ "Taylor J", 27, "CSUSB", "Computer System" ];
+		var obj = { "NAME" : "Taylor J", "AGE" : 27, "UNIVERSITY" : "CSUSB", "MAJOR" : "Computer System" };
+
+		/* Array and Object Value Check */
+		document.write("<b>Normal String Arrary :</b> ", arr, "<br/>");
+		document.write("<br/><b>Normal Object</b><br/>");
+		for(var objVarName in obj) {
+			document.write(objVarName, " : ", obj[objVarName], "<br/>");
+		}
+
+		/* JSON Definition */
+		var json = '{ "NAME" : "Taylor J", "AGE" :  27, "UNIVERSITY" : "CSUSB", "MAJOR" : "Computer System" }';
+
+		/* JSON Parse and Check */
+		var jsonObj = JSON.parse(json);
+		document.write("<br/><b>JSON Object</b><br/>");
+		for(var objVarName in jsonObj) {
+			document.write(objVarName, " : ", jsonObj[objVarName], "<br/>");
+		}
+
+		/* JON Object to JSON String */
+		var jsonStr = JSON.stringify(jsonObj);
+		document.write("<br/><b>JSON String Format :</b> ", jsonStr, "<br/>");
+	</script>
+</body>

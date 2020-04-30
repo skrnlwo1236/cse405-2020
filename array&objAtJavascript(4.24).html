@@ -1,0 +1,18 @@
+<head>
+	<title>JSON Basic</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<script>
+		/* Array and Object Definition  */
+		var arr = [ "Taylor J", 27, "CSUSB", "Computer System" ];
+		var obj = { "Name" : "Taylor J", "AGE" : 27, "UNIVERSITY" : "CSUSB", "MAJOR" : "Computer System" };
+
+		/* Array and Object Value Check */
+		document.write("<b>Normal String Arrary :</b> ", arr, "<br/>");
+		document.write("<br/><b>Normal Object</b><br/>");
+		for(var objVarName in obj) {
+			document.write(objVarName, " : ", obj[objVarName], "<br/>");
+		}
+	</script>
+</body>
